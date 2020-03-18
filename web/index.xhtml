@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Diego Alejandro Rico Fernandez</title>
+    </h:head>
+    <h:body>
+        <div>
+            <h:form>
+                <p:tabMenu activeIndex="1">
+                    <p:menuitem value="Inicio" outcome="/index" icon="pi pi-star">
+                        <f:param name="i" value="0" />
+                    </p:menuitem>
+                    <p:menuitem value="Metodologias"   icon="pi pi-search">
+                        <f:param name="i" value="1" />
+                    </p:menuitem>
+
+                </p:tabMenu>    
+            </h:form>
+        </div>
+        <div>
+
+        </div>
+
+
+        <div>
+            <p:tabView orientation="left">
+                <p:tab title="Programación extrema (XP)">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <h:outputText value="Conocida por sus siglas XP ( eXtreme Programming ), es una metodología basada en un conjunto de reglas y buenas prácticas para el desarrollo de software en ambientes muy cambiantes con requisitos imprecisos, por ende está enfocada en la retroalimentación continua entre el equipo de desarrollo y el cliente. Es por ello que iniciando el proyecto se deben definir todos los requisitos, para luego invertir el esfuerzo en manejar los cambios que se presenten y así minimizar las posibilidades de error. XP tiene como base la simplicidad y como objetivo la satisfacción del cliente." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Scrum">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <h:outputText value="Esta metodología, es un marco de trabajo de procesos ágiles que trabaja con el ciclo de vida iterativo e incremental , donde se va liberando el producto por pares de forma periódica, aplicando las buenas prácticas de trabajo colaborativo (en equipo), facilitando el hallazgo de soluciones óptimas a los problemas que pueden ir surgiendo en el proceso de desarrollo del proyecto." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Kanban">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <h:outputText value="Proveniente de una palabra japonesa cuyo significado es “Tarjeta Visual” es un marco de trabajo que requiere una comunicación en tiempo real sobre la capacidad del equipo, utilizado para controlar el avance de trabajo en una línea de producción, en la cual se clasifican las tareas en sub estatus, esto con la intención de determinar los niveles de productividad en cada fase del proyecto." />
+                    </h:panelGrid>
+                </p:tab>
+            </p:tabView>
+        </div>
+    </h:body>
+</html>
+
